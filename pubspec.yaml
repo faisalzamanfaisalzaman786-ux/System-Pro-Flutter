@@ -1,5 +1,5 @@
 name: filter_app
-description: Universal Mobile Application - All Features Included
+description: Universal Mobile Application - All Features Included with Offline AI
 version: 1.0.0+1
 publish_to: none
 
@@ -85,10 +85,37 @@ dependencies:
   uuid: ^4.5.1
   equatable: ^2.0.5
 
+  # ============================================================
+  # 🆕 NEW: AI & VOICE ASSISTANT PACKAGES (صرف یہ شامل کیے گئے)
+  # ============================================================
+  
+  # 🎤 Speech to Text - آواز کو ٹیکسٹ میں بدلنا
+  speech_to_text: ^7.0.0
+  
+  # 🔊 Text to Speech - ٹیکسٹ کو آواز میں بدلنا
+  flutter_tts: ^4.0.0
+  
+  # 🎵 Audio Playback - آڈیو چلانے کے لیے
+  audioplayers: ^6.1.0
+  
+  # 📝 JSON Serialization - ڈیٹا کو JSON میں تبدیل کرنا
+  json_annotation: ^4.9.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  
+  # 🔧 Build Runner - JSON Serialization کے لیے
+  build_runner: ^2.4.9
+  json_serializable: ^6.8.0
 
 flutter:
   uses-material-design: true
+  
+  # ============================================================
+  # 📁 ASSETS - AI Model اور دیگر فائلیں
+  # ============================================================
+  assets:
+    - assets/ai_model.txt
+    # آپ کی دیگر assets یہاں شامل کریں
